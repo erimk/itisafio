@@ -4,7 +4,7 @@ import Config
 config :itisafio, Itisafio.Repo,
   username: "postgres",
   password: "postgres",
-  hostname: "localhost",
+  hostname: System.get_env("DBHOSTNAME") || "localhost",
   database: "itisafio_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,

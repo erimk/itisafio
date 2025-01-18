@@ -52,6 +52,7 @@ IsValid("AbTp9!fok") // true
 - docker-compose build
 - docker-compose run --rm web mix setup
 - docker-compose run --rm web mix test
+- docker-compose up -d
 - docker-compose up --force-recreate
 
 ## Database
