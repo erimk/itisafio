@@ -53,7 +53,6 @@ IsValid("AbTp9!fok") // true
 - docker-compose run --rm web mix setup
 - docker-compose run --rm web mix test
 - docker-compose up -d
-- docker-compose up --force-recreate
 
 ## Database
 
@@ -70,11 +69,11 @@ IsValid("AbTp9!fok") // true
 
 ### Endpoint
 
- Verificar senha  (post /api/v1/sign_up )
+ Verificar senha  (post /api/verify_pass )
 
   ```json
   {
-    password: "AbTp9!fok"
+    "password": "AbTp9!fok"
   }
   ```
 

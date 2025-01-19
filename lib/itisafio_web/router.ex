@@ -7,6 +7,8 @@ defmodule ItisafioWeb.Router do
 
   scope "/api", ItisafioWeb do
     pipe_through :api
+
+    post "/verify_pass", CypherController, :verify_pass
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
