@@ -1,6 +1,6 @@
 # Itisafio
 
-WIP
+Desafio proposto para entrevista.
 
 ## Proposal Problem
 
