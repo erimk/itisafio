@@ -50,18 +50,8 @@ IsValid("AbTp9!fok") // true
 ## Docker
 
 - docker-compose build
-- docker-compose run --rm web mix setup
 - docker-compose run --rm web mix test
 - docker-compose up -d
-
-## Database
-
-  PostgreSQL
-
-  ```text
-  username: postgres
-  password: postgres
-  ```
 
 ## Using
 

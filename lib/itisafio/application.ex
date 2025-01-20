@@ -9,8 +9,8 @@ defmodule Itisafio.Application do
   def start(_type, _args) do
     children = [
       ItisafioWeb.Telemetry,
-      Itisafio.Repo,
-      {DNSCluster, query: Application.get_env(:itisafio, :dns_cluster_query) || :ignore},
+      # Itisafio.Repo,
+      # {DNSCluster, query: Application.get_env(:itisafio, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Itisafio.PubSub},
       # Start the Finch HTTP client for sending emails
       {Finch, name: Itisafio.Finch},

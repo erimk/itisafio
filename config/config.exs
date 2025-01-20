@@ -7,9 +7,9 @@
 # General application configuration
 import Config
 
-config :itisafio,
-  ecto_repos: [Itisafio.Repo],
-  generators: [timestamp_type: :utc_datetime]
+# config :itisafio,
+  # ecto_repos: [Itisafio.Repo],
+  # generators: [timestamp_type: :utc_datetime]
 
 # Configures the endpoint
 config :itisafio, ItisafioWeb.Endpoint,

@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   web:
     stdin_open: true
@@ -10,26 +8,25 @@ services:
         MIX_ENV: dev
     container_name: itisafio
     command: mix phx.server
-    environment:
-      - DBHOSTNAME=pg_db
+    # environment:
+    #   - DATABASE_URL=ecto://postgres:@pg_db/itisafio
+    #   - SECRET_KEY_BASE=secret
     ports:
       - 4000:4000
       - 4001:4001
-    volumes:
-      - .:/app
-    depends_on:
-      - pg_db
+    # depends_on:
+    #   - pg_db
 
-  pg_db:
-    image: postgres:13
-    container_name: itisafio_db
-    environment:
-      - POSTGRES_HOST_AUTH_METHOD=trust
-      - PGUSER=postgres
-    ports:
-      - 5432:5432
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
+#   pg_db:
+#     image: postgres:13
+#     container_name: itisafio_db
+#     environment:
+#       - POSTGRES_HOST_AUTH_METHOD=trust
+#       - PGUSER=postgres
+#     ports:
+#       - 5432:5432
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data/
 
-volumes:
-  postgres_data:
+# volumes:
+#   postgres_data:
