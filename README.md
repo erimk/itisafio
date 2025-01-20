@@ -47,12 +47,6 @@ IsValid("AbTp9!fok") // true
 - Start Phoenix endpoint with `mix phx.server`
 - Run complete tests `mix test`
 
-## Docker
-
-- docker-compose build
-- docker-compose run --rm web mix test
-- docker-compose up -d
-
 ## Using
 
  You can use postman, or a similar app, to send json to this API.
